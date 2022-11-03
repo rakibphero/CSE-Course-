@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     int n, i, j, index[20];
-    float bt[20], wt[20], tat[20], avwt=0, avtat=0;
+    float bt[20], wt[20], tat[20], avg_wt=0, avg_tat=0;
     cout<<"Enter Number of Processes: ";
     cin>>n;
 
@@ -31,12 +31,12 @@ int main(){
     for(i=0;i<n;i++){
         wt[i+1]= wt[i]+bt[i];
         tat[i]= wt[i]+bt[i];
-        avwt=avwt+wt[i];
-        avtat=avtat+tat[i];
+        avg_wt=avg_wt+wt[i];
+        avg_tat=avg_tat+tat[i];
         cout<<"P["<<index[i]+1<<"]\t\t"<<bt[i]<<"\t\t"<<wt[i]<<"\t\t"<<tat[i]<<endl;
     }
 
-    cout<<endl<<"Average Waiting Time: "<<avwt/i<<endl;
-    cout<<"Average Turnaround Time: "<<avtat/n<<endl;
+    cout<<endl<<"Average Waiting Time: "<<avg_wt/n<<endl;
+    cout<<"\nAverage Turnaround Time: "<<avg_tat/n<<endl;
     return 0;
 }

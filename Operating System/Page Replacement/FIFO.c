@@ -36,6 +36,6 @@ int main()
         }
         printf("\n");
     }
-    printf("Page Fault Is %d",fcount);
+    printf("Page Fault is: %d",fcount);
     return 0;
 }

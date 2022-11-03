@@ -42,7 +42,7 @@ int main()
 	int n,i, bt[20], quantum, wt[20], tat[20];
 	float total_wt = 0, total_tat = 0;
 
-	cout<<"Enter time quantam: ";
+	cout<<"Enter time quantum: ";
 	cin>>quantum;
 	cout<<"Enter the number of process: ";
 	cin>>n;

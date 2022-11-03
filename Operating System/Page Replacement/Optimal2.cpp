@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// This function checks if current strea item(key) exists in any of the frames or not
+// This function checks if current stream item(key) exists in any of the frames or not
 int search(int key, vector<int>& frame_items, int frame_occupied)
 {
     for (int i = 0; i < frame_occupied; i++)
@@ -11,10 +11,10 @@ int search(int key, vector<int>& frame_items, int frame_occupied)
 }
 
 void printOuterStructure(int max_frames){
-    printf("Stream ");
+    printf("Stream\t\t ");
 
     for(int i = 0; i < max_frames; i++)
-        printf("Frame%d ", i+1);
+        printf("Frame%d\t\t ", i+1);
 }
 void printCurrFrames(int item, vector<int>& frame_items, int frame_occupied, int max_frames){
 
@@ -86,7 +86,7 @@ void optimalPage(int ref_str[], int refStrLen, int max_frames)
             frame_items.push_back(ref_str[i]);
             printCurrFrames(ref_str[i], frame_items, frame_items.size(), max_frames);
         }
-        // else we need to use optmial algorithm to find
+        // else we need to use optimal algorithm to find
         // frame index where we need to do replacement for this
         // incoming reference string item
         else {

@@ -12,8 +12,7 @@ struct Process {
 
 // Function to find the waiting time for all
 // processes
-void findWaitingTime(Process proc[], int n,
-								int wt[])
+void findWaitingTime(Process proc[], int n, int wt[])
 {
 	int rt[n];
 
