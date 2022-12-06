@@ -1,0 +1,14 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+    int main()
+    {
+        fstream input;
+        input.open("text_file.txt");
+        int line=0; string str;
+        while(getline(input,str)){
+            line++;
+        }
+        input.close();
+        cout<<"The number of lines are "<<line<<endl;
+        return 0;
+    }
